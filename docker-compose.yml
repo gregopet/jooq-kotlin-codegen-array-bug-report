@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres-6005
+    ports:
+      - '6005:5432'
+    environment:
+      - POSTGRES_DB=blabla
+      - POSTGRES_USER=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
